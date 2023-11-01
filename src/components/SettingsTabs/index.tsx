@@ -1,7 +1,8 @@
 'use client'
 
-import React from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
+import React from 'react'
+
 import { TabItem } from './TabItem'
 
 export function SettingsTabs() {
