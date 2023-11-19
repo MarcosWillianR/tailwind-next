@@ -39,7 +39,122 @@ export default function Home() {
           id="settings"
           className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200"
         >
-          form
+          <div className="grid-cols-form grid gap-3">
+            <label
+              htmlFor="firstName"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Name
+            </label>
+            <div className="grid grid-cols-2 gap-6">
+              <Input.InputRoot>
+                <Input.InputControl id="firstName" defaultValue="Marcos" />
+              </Input.InputRoot>
+
+              <Input.InputRoot>
+                <Input.InputControl defaultValue="Willian" />
+              </Input.InputRoot>
+            </div>
+          </div>
+
+          <div className="grid-cols-form grid gap-3 pt-5">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Email address
+            </label>
+            <Input.InputRoot>
+              <Input.InputPrefix>
+                <Mail className="h-5 w-5 text-zinc-500" />
+              </Input.InputPrefix>
+              <Input.InputControl
+                id="email"
+                type="email"
+                defaultValue="markusuuuu@gmail.com"
+              />
+            </Input.InputRoot>
+          </div>
+
+          <div className="grid-cols-form grid gap-3 pt-5">
+            <label
+              htmlFor="picture"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Your photo
+              <span className="mt-0.5 block text-sm font-normal text-zinc-500">
+                This will be displayed on your profile.
+              </span>
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid-cols-form grid gap-3 pt-5">
+            <label htmlFor="role" className="text-sm font-medium text-zinc-700">
+              Role
+            </label>
+            <Input.InputRoot>
+              <Input.InputControl id="role" defaultValue="Developer" />
+            </Input.InputRoot>
+          </div>
+
+          <div className="grid-cols-form grid gap-3 pt-5">
+            <label
+              htmlFor="country"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Country
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid-cols-form grid gap-3 pt-5">
+            <label
+              htmlFor="timezone"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Timezone
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid-cols-form grid gap-3 pt-5">
+            <label htmlFor="bio" className="text-sm font-medium text-zinc-700">
+              Bio
+              <span className="mt-0.5 block text-sm font-normal text-zinc-500">
+                Write a short introduction.
+              </span>
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid-cols-form grid gap-3 pt-5">
+            <label
+              htmlFor="projects"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Porfolio projects
+              <span className="mt-0.5 block text-sm font-normal text-zinc-500">
+                Share a few snippets of your work.
+              </span>
+            </label>
+            <div></div>
+          </div>
+
+          <div className="flex items-center justify-end gap-2 pt-5">
+            <button
+              type="button"
+              className="rounded-lg border border-zinc-300 px-4 py-2 font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              className="rounded-lg bg-violet-600 px-4 py-2 font-semibold text-white shadow-sm hover:bg-violet-700"
+            >
+              Save
+            </button>
+          </div>
         </form>
       </div>
     </>
